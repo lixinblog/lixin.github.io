@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[关于浮躁]]></title>
+    <url>%2F2022%2F04%2F28%2F%E5%85%B3%E4%BA%8E%E6%B5%AE%E8%BA%81%2F</url>
+    <content type="text"><![CDATA[关于浮躁 ​ 事情不是用来完成的，它是用来体验的。做事不专心，就难以品尝其中的乐趣。当你讨厌什么的时，你总是会遇到它，而且还无法逃避，这会给你带来困惑，因为你不知道究竟发生了什么，所以，你很容易处在焦虑、烦躁与混乱中。 ​ 事情不是用来完成的，它是用来体验的。通过体验，你才能认识更高的自己，才能意识到自己的广阔和自由。如果把事情当成负担，你就无法走得更远，而且很容易变得消沉，没有动力。做事得乐趣在于深入事情的内部，只有到达了那个层面，奥秘才会展示出来，而且，它还会带出你更多的品质，也同时会减少你的焦虑与不安。你可以试一下。在做事时，尽量做好每个细节，让细节来稳定你的心态。只要心态平稳了，你的信心就会增强，而且你还会认真对待来到你面前的每件事。事情没有大小，只有全心或不全心。 ​ 你只要建立全心做事的品质，你就能把这种品质延伸到其他的事情中去。这样一来，你就会发现你的确是很能干的。]]></content>
+      <categories>
+        <category>心理</category>
+      </categories>
+      <tags>
+        <tag>心理</tag>
+        <tag>哲学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[124-二叉树中的最大路径和]]></title>
     <url>%2F2021%2F03%2F26%2F124-%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E7%9A%84%E6%9C%80%E5%A4%A7%E8%B7%AF%E5%BE%84%E5%92%8C%2F</url>
     <content type="text"><![CDATA[路径 被定义为一条从树中任意节点出发，沿父节点-子节点连接，达到任意节点的序列。同一个节点在一条路径序列中 至多出现一次 。该路径 至少包含一个 节点，且不一定经过根节点。 路径和 是路径中各节点值的总和。 给你一个二叉树的根节点 root ，返回其 最大路径和 。 示例 1： 123输入：root = [1,2,3]输出：6解释：最优路径是 2 -&gt; 1 -&gt; 3 ，路径和为 2 + 1 + 3 = 6 示例 2： 123输入：root = [-10,9,20,null,null,15,7]输出：42解释：最优路径是 15 -&gt; 20 -&gt; 7 ，路径和为 15 + 20 + 7 = 42 提示： 树中节点数目范围是 [1, 3 * 104] -1000 &lt;= Node.val &lt;= 1000 1234567891011121314151617181920212223242526272829303132333435363738/** * Definition for a binary tree node. * public class TreeNode &#123; * int val; * TreeNode left; * TreeNode right; * TreeNode() &#123;&#125; * TreeNode(int val) &#123; this.val = val; &#125; * TreeNode(int val, TreeNode left, TreeNode right) &#123; * this.val = val; * this.left = left; * this.right = right; * &#125; * &#125; */class Solution &#123; int MaxVal=Integer.MIN_VALUE; public int maxPathSum(TreeNode root) &#123; dfs(root); return MaxVal; &#125; public int dfs(TreeNode root) &#123; if(root==null) return 0; //找左子树的最大路径(降序：从上往下) int leftval=Math.max(dfs(root.left),0); //找右子树的最大路径(降序：从上往下) int rightval=Math.max(dfs(root.right),0); //计算当前节点的最大路径 int newpathval=root.val+leftval+rightval; //更新最大路径和 MaxVal=Math.max(MaxVal,newpathval); //返回当前节点的最大路径和(从上往下) return root.val+Math.max(leftval,rightval); &#125;&#125;]]></content>
@@ -791,9 +803,9 @@
         <category>Map</category>
       </categories>
       <tags>
-        <tag>List</tag>
         <tag>Map</tag>
         <tag>排序</tag>
+        <tag>List</tag>
       </tags>
   </entry>
   <entry>
@@ -839,8 +851,8 @@
         <category>BFS</category>
       </categories>
       <tags>
-        <tag>LeetCode春季赛</tag>
         <tag>BFS</tag>
+        <tag>LeetCode春季赛</tag>
       </tags>
   </entry>
   <entry>
@@ -977,8 +989,8 @@
         <category>二叉树</category>
       </categories>
       <tags>
-        <tag>二叉树</tag>
         <tag>BFS</tag>
+        <tag>二叉树</tag>
       </tags>
   </entry>
   <entry>
@@ -989,8 +1001,8 @@
         <category>二叉树</category>
       </categories>
       <tags>
-        <tag>二叉树</tag>
         <tag>BFS</tag>
+        <tag>二叉树</tag>
       </tags>
   </entry>
   <entry>
@@ -1023,9 +1035,9 @@
         <category>贪心</category>
       </categories>
       <tags>
-        <tag>LeetCode周赛</tag>
         <tag>贪心</tag>
         <tag>优先队列</tag>
+        <tag>LeetCode周赛</tag>
       </tags>
   </entry>
   <entry>
@@ -1072,8 +1084,8 @@
         <category>数学</category>
       </categories>
       <tags>
-        <tag>递归</tag>
         <tag>数学</tag>
+        <tag>递归</tag>
       </tags>
   </entry>
   <entry>
